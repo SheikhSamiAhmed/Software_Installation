@@ -122,6 +122,36 @@ $] cmake ../..
 $] make -j8
 
 
+----------------------------------------------------------------------------
+
+
+Mininet-Wifi
+
+---------------------------------------------------------------------------
+Mininet-Wifi setup.
+
+$ git clone https://github.com/intrig-unicamp/mininet-wifi
+$ cd mininet-wifi && sudo util/install.sh -Wlnfv
+
+# in case locales error (pip)
+$ export LC_ALL="en_US.UTF-8" && export LC_CTYPE="en_US.UTF-8"
+$ sudo dpkg-reconfigure locales
+
+# in case
+$ sudo apt install wireshark xterm
+
+# default creds
+wifi/wifi
+
+# in case
+$ sudo systemctl stop network-manager
+$ sudo service network-manager stop
+
+# in case
+$ sudo nano ~/.profile
+PATH="$HOME/mininet-wifi/bin:$PATH
+
+
 
 
 
