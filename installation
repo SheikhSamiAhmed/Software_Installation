@@ -121,7 +121,14 @@ Step 4 - Cmake build
 $] cmake ../..
 $] make -j8
 
+gedit .bashrc
 
+export PATH=$PATH:/home/sami/sumo/bin
+
+export SUMO_HOME=/home/sami/sumo
+
+
+source .bashrc
 ----------------------------------------------------------------------------
 
 
